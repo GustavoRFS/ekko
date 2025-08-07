@@ -1,0 +1,7 @@
+.title-bar-button:hover {
+  filter: brightness(150%);
+}
+
+.title-bar {
+  background: linear-gradient(to bottom, #020b14ff, #020b1400);
+}

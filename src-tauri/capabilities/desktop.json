@@ -1,0 +1,23 @@
+{
+  "identifier": "desktop-capability",
+  "platforms": [
+    "macOS",
+    "windows",
+    "linux"
+  ],
+  "windows": [
+    "main"
+  ],
+  "permissions": [
+    "autostart:default",
+    "store:default",
+    "websocket:default",
+    "updater:default",
+    "notification:default",
+    "core:window:allow-show",
+    "core:window:allow-set-ignore-cursor-events",
+    "core:window:allow-hide",
+    "process:default",
+    "updater:default"
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "tauri-app",
+  "version": "0.1.0",
+  "identifier": "com.tauri-app.app",
+  "build": {
+    "beforeDevCommand": "pnpm dev",
+    "devUrl": "http://localhost:1420",
+    "beforeBuildCommand": "pnpm build",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "League Voice",
+        "width": 1024,
+        "height": 576,
+        "resizable": false,
+        "maximizable": false,
+        "center": true,
+        "decorations": false,
+        "shadow": false
+      },
+      {
+        "label": "apenis",
+        "title": "apenis",
+        "url": "/overlay",
+        "visible": false,
+        "transparent": true,
+        "resizable": false,
+        "alwaysOnTop": true,
+        "fullscreen": true
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "createUpdaterArtifacts": true,
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ]
+  },
+  "plugins": {
+    "updater": {
+      "windows": {
+        "installMode": "basicUi"
+      },
+      "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDNFQzlFRjFDMTYyRTlEODgKUldTSW5TNFdITy9KUHJEeTRLYS9kakNHM3FRVm9ldWlpcVp4WjdyaTR0M2xHR0xyUGlMYW1DNFkK",
+      "endpoints": [
+        "https://github.com/GustavoRFS/ekko/releases/latest/download/latest.json"
+      ]
+    }
+  }
+}
