@@ -13,7 +13,7 @@ var local_stream;
 export default function Call() {
   const [roomId, setRoomId] = createSignal("");
 
-  const [selectedInput, setSelectedInput] = createSignal<string>()
+  const [selectedInput, setSelectedInput] = createSignal<string>("")
 
   return (
     <div class="w-screen h-screen absolute top-[2px] flex flex-row gap-6 justify-center">
